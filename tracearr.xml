@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>tracearr</Name>
+  <Repository>ghcr.io/connorgallopo/tracearr:supervised</Repository>
+  <Registry>https://github.com/connorgallopo/tracearr/pkgs/container/tracearr</Registry>
+  <Branch>
+    <Tag>supervised</Tag>
+    <TagDescription>All-in-one image with built-in TimescaleDB and Redis.</TagDescription>
+  </Branch>
+  <Branch>
+    <Tag>supervised-nightly</Tag>
+    <TagDescription>Nightly all-in-one build. May be unstable.</TagDescription>
+  </Branch>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/connorgallopo/tracearr/issues</Support>
+  <Project>https://github.com/connorgallopo/tracearr</Project>
+  <Overview>Tracearr is a streaming access manager for Plex and Jellyfin servers that detects account sharing.&#xD;
+&#xD;
+This is an ALL-IN-ONE image - no external database or Redis required!&#xD;
+&#xD;
+Features:&#xD;
+- Multi-server support (Plex + Jellyfin)&#xD;
+- Session tracking with full history&#xD;
+- Geolocation and interactive stream map&#xD;
+- 5 sharing detection rules (impossible travel, simultaneous locations, device velocity, concurrent streams, geo restriction)&#xD;
+- User management with trust scores&#xD;
+- Discord + Webhook notifications&#xD;
+- Real-time dashboard&#xD;
+&#xD;
+For geolocation features, download GeoLite2-City.mmdb from MaxMind and place it in the data directory.</Overview>
+  <Category>Tools:MediaServer:Other MediaApp:Other</Category>
+  <WebUI>http://[IP]:[PORT:3000]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/tracearr.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/img/tracearr-icon.png</Icon>
+  <Description>Tracearr - Streaming access manager for Plex/Jellyfin with account sharing detection. All-in-one image with built-in database.</Description>
+  <ExtraParams>--restart=unless-stopped</ExtraParams>
+  <PostArgs/>
+  <Labels/>
+
+  <!-- Web UI Port -->
+  <Config Name="Web UI Port" Target="3000" Default="3000" Mode="tcp" Description="Port for the Tracearr web interface." Type="Port" Display="always" Required="true" Mask="false">3000</Config>
+
+  <!-- Data Directories -->
+  <Config Name="PostgreSQL Data" Target="/data/postgres" Default="/mnt/user/appdata/tracearr/postgres" Mode="rw" Description="PostgreSQL database storage. DO NOT change after first run." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/tracearr/postgres</Config>
+
+  <Config Name="Redis Data" Target="/data/redis" Default="/mnt/user/appdata/tracearr/redis" Mode="rw" Description="Redis data storage." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/tracearr/redis</Config>
+
+  <Config Name="App Data" Target="/data/tracearr" Default="/mnt/user/appdata/tracearr/data" Mode="rw" Description="Application data including secrets and GeoIP database. Place GeoLite2-City.mmdb here for geolocation." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/tracearr/data</Config>
+
+  <!-- Optional: Override auto-generated secrets -->
+  <Config Name="JWT Secret" Target="JWT_SECRET" Default="" Mode="" Description="(Optional) JWT signing key. Auto-generated if not set. Generate with: openssl rand -hex 32" Type="Variable" Display="advanced" Required="false" Mask="true"/>
+
+  <Config Name="Cookie Secret" Target="COOKIE_SECRET" Default="" Mode="" Description="(Optional) Cookie signing key. Auto-generated if not set. Generate with: openssl rand -hex 32" Type="Variable" Display="advanced" Required="false" Mask="true"/>
+
+  <Config Name="Encryption Key" Target="ENCRYPTION_KEY" Default="" Mode="" Description="(Optional) Server token encryption key. Auto-generated if not set. Generate with: openssl rand -hex 32" Type="Variable" Display="advanced" Required="false" Mask="true"/>
+
+  <!-- Optional Settings -->
+  <Config Name="Log Level" Target="LOG_LEVEL" Default="info" Mode="" Description="Logging verbosity: debug, info, warn, error" Type="Variable" Display="advanced" Required="false" Mask="false">info</Config>
+
+  <Config Name="CORS Origin" Target="CORS_ORIGIN" Default="" Mode="" Description="Frontend URL for CORS. Only needed if accessing from different domain." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
