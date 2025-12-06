@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>tracearr</Name>
+  <Name>tracearr-supervised</Name>
   <Repository>ghcr.io/connorgallopo/tracearr:supervised</Repository>
   <Registry>https://github.com/connorgallopo/tracearr/pkgs/container/tracearr</Registry>
   <Branch>
@@ -17,7 +17,13 @@
   <Project>https://github.com/connorgallopo/tracearr</Project>
   <Overview>Tracearr is a streaming access manager for Plex and Jellyfin servers that detects account sharing.&#xD;
 &#xD;
-This is an ALL-IN-ONE image - no external database or Redis required!&#xD;
+ALL-IN-ONE IMAGE INCLUDES:&#xD;
+- TimescaleDB (PostgreSQL 15 with time-series extensions)&#xD;
+- Redis (caching and real-time updates)&#xD;
+- GeoIP database (GeoLite2-City for geolocation)&#xD;
+- Auto-generated secrets (persisted across restarts)&#xD;
+&#xD;
+No external database or Redis required!&#xD;
 &#xD;
 Features:&#xD;
 - Multi-server support (Plex + Jellyfin)&#xD;
@@ -26,12 +32,10 @@ Features:&#xD;
 - 5 sharing detection rules (impossible travel, simultaneous locations, device velocity, concurrent streams, geo restriction)&#xD;
 - User management with trust scores&#xD;
 - Discord + Webhook notifications&#xD;
-- Real-time dashboard&#xD;
-&#xD;
-For geolocation features, download GeoLite2-City.mmdb from MaxMind and place it in the data directory.</Overview>
+- Real-time dashboard</Overview>
   <Category>Tools:MediaServer:Other MediaApp:Other</Category>
   <WebUI>http://[IP]:[PORT:3000]/</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/tracearr.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/tracearr-supervised/tracearr-supervised.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/img/tracearr-icon.png</Icon>
   <Description>Tracearr - Streaming access manager for Plex/Jellyfin with account sharing detection. All-in-one image with built-in database.</Description>
   <ExtraParams>--restart=unless-stopped</ExtraParams>

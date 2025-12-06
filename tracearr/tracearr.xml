@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>tracearr</Name>
+  <Repository>ghcr.io/connorgallopo/tracearr:latest</Repository>
+  <Registry>https://github.com/connorgallopo/tracearr/pkgs/container/tracearr</Registry>
+  <Branch>
+    <Tag>latest</Tag>
+    <TagDescription>Latest stable release.</TagDescription>
+  </Branch>
+  <Branch>
+    <Tag>nightly</Tag>
+    <TagDescription>Nightly development build. May be unstable.</TagDescription>
+  </Branch>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/connorgallopo/tracearr/issues</Support>
+  <Project>https://github.com/connorgallopo/tracearr</Project>
+  <Overview>Tracearr is a streaming access manager for Plex and Jellyfin servers that detects account sharing.&#xD;
+&#xD;
+REQUIRES: External TimescaleDB (PostgreSQL 15+) and Redis.&#xD;
+For a simpler setup, use Tracearr Supervised instead (all-in-one image).&#xD;
+&#xD;
+Features:&#xD;
+- Multi-server support (Plex + Jellyfin)&#xD;
+- Session tracking with full history&#xD;
+- Geolocation and interactive stream map&#xD;
+- 5 sharing detection rules (impossible travel, simultaneous locations, device velocity, concurrent streams, geo restriction)&#xD;
+- User management with trust scores&#xD;
+- Discord + Webhook notifications&#xD;
+- Real-time dashboard&#xD;
+&#xD;
+GeoIP database (GeoLite2-City) is bundled for geolocation features.</Overview>
+  <Category>Tools:MediaServer:Other MediaApp:Other</Category>
+  <WebUI>http://[IP]:[PORT:3000]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/tracearr/tracearr.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/img/tracearr-icon.png</Icon>
+  <Description>Tracearr - Streaming access manager for Plex/Jellyfin with account sharing detection. Requires external database.</Description>
+  <ExtraParams>--restart=unless-stopped</ExtraParams>
+  <PostArgs/>
+  <Labels/>
+
+  <!-- Web UI Port -->
+  <Config Name="Web UI Port" Target="3000" Default="3000" Mode="tcp" Description="Port for the Tracearr web interface." Type="Port" Display="always" Required="true" Mask="false">3000</Config>
+
+  <!-- Required Database Configuration -->
+  <Config Name="Database URL" Target="DATABASE_URL" Default="" Mode="" Description="PostgreSQL/TimescaleDB connection string. Example: postgresql://user:pass@192.168.1.100:5432/tracearr" Type="Variable" Display="always" Required="true" Mask="false"/>
+
+  <Config Name="Redis URL" Target="REDIS_URL" Default="" Mode="" Description="Redis connection string. Example: redis://192.168.1.100:6379" Type="Variable" Display="always" Required="true" Mask="false"/>
+
+  <!-- Data Directory -->
+  <Config Name="Data Directory" Target="/data" Default="/mnt/user/appdata/tracearr" Mode="rw" Description="Application data. Place GeoLite2-City.mmdb here for geolocation." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/tracearr</Config>
+
+  <!-- Required Secrets -->
+  <Config Name="JWT Secret" Target="JWT_SECRET" Default="" Mode="" Description="JWT signing key (32 hex chars). Generate with: openssl rand -hex 32" Type="Variable" Display="always" Required="true" Mask="true"/>
+
+  <Config Name="Cookie Secret" Target="COOKIE_SECRET" Default="" Mode="" Description="Cookie signing key (32 hex chars). Generate with: openssl rand -hex 32" Type="Variable" Display="always" Required="true" Mask="true"/>
+
+  <Config Name="Encryption Key" Target="ENCRYPTION_KEY" Default="" Mode="" Description="Server token encryption key (32 hex chars). Generate with: openssl rand -hex 32" Type="Variable" Display="always" Required="true" Mask="true"/>
+
+  <!-- Optional Settings -->
+  <Config Name="Log Level" Target="LOG_LEVEL" Default="info" Mode="" Description="Logging verbosity: debug, info, warn, error" Type="Variable" Display="advanced" Required="false" Mask="false">info</Config>
+
+  <Config Name="CORS Origin" Target="CORS_ORIGIN" Default="" Mode="" Description="Frontend URL for CORS. Only needed if accessing from different domain." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
