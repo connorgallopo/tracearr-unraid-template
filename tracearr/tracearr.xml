@@ -60,5 +60,7 @@ GeoIP database (GeoLite2-City) is bundled for geolocation features.</Overview>
   <!-- Optional Settings -->
   <Config Name="Log Level" Target="LOG_LEVEL" Default="info" Mode="" Description="Logging verbosity: debug, info, warn, error" Type="Variable" Display="advanced" Required="false" Mask="false">info</Config>
 
+  <Config Name="Timezone" Target="TZ" Default="America/New_York" Mode="" Description="Container timezone (e.g., America/New_York, Europe/London)" Type="Variable" Display="advanced" Required="false" Mask="false">America/New_York</Config>
+
   <Config Name="CORS Origin" Target="CORS_ORIGIN" Default="" Mode="" Description="Frontend URL for CORS. Only needed if accessing from different domain." Type="Variable" Display="advanced" Required="false" Mask="false"/>
 </Container>
