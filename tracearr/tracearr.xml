@@ -15,6 +15,10 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/connorgallopo/tracearr/issues</Support>
   <Project>https://github.com/connorgallopo/tracearr</Project>
+  <ReadMe>https://github.com/connorgallopo/tracearr#readme</ReadMe>
+  <WebPage>https://discord.gg/a7n3sFd2Yw</WebPage>
+  <ExtraSearchTerms>plex jellyfin emby account sharing detection streaming monitor session tracker trust score geolocation impossible travel arr</ExtraSearchTerms>
+  <Date>2025-12-10</Date>
   <Overview>Tracearr is a streaming access manager for Plex and Jellyfin servers that detects account sharing.&#xD;
 &#xD;
 REQUIRES: External TimescaleDB (PostgreSQL 15+) and Redis.&#xD;
@@ -30,7 +34,7 @@ Features:&#xD;
 - Real-time dashboard&#xD;
 &#xD;
 GeoIP database (GeoLite2-City) is bundled for geolocation features.</Overview>
-  <Category>Tools:MediaServer:Other MediaApp:Other</Category>
+  <Category>MediaServer:Other Tools: Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:3000]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/tracearr/tracearr.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/img/tracearr-icon.png</Icon>
