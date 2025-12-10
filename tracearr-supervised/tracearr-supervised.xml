@@ -65,4 +65,19 @@ Features:&#xD;
   <Config Name="Timezone" Target="TZ" Default="UTC" Mode="" Description="Container timezone (e.g., America/New_York, Europe/London)" Type="Variable" Display="advanced" Required="false" Mask="false">UTC</Config>
 
   <Config Name="CORS Origin" Target="CORS_ORIGIN" Default="" Mode="" Description="Frontend URL for CORS. Only needed if accessing from different domain." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+
+  <Changes>
+### 2025-12-10
+- First stable release (v1.2.0)
+- Fix supervised tag not being published (was only available in nightly/beta)
+- Non-root user for improved security
+- Log rotation for all services
+- Timezone support via TZ environment variable
+- Fix boot loop on fresh installs and corrupt data
+- Dark/light mode theme support
+- Custom date filtering for stats
+- Mobile app with push notifications
+- Plex SSE for real-time session updates
+- Emby server support
+  </Changes>
 </Container>
