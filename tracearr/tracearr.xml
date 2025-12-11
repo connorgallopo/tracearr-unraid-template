@@ -69,7 +69,7 @@ GeoIP database (GeoLite2-City) is bundled for geolocation features.</Overview>
 
   <Config Name="Timezone" Target="TZ" Default="America/New_York" Mode="" Description="Container timezone (e.g., America/New_York, Europe/London)" Type="Variable" Display="advanced" Required="false" Mask="false">America/New_York</Config>
 
-  <Config Name="CORS Origin" Target="CORS_ORIGIN" Default="" Mode="" Description="Frontend URL for CORS. Only needed if accessing from different domain." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="CORS Origin" Target="CORS_ORIGIN" Default="*" Mode="" Description="Allowed origins for CORS. Use * for all origins, or specify a domain (e.g., https://example.com)." Type="Variable" Display="advanced" Required="false" Mask="false">*</Config>
 
   <Changes>
 ### 2025-12-10
