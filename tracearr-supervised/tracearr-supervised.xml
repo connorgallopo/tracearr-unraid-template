@@ -41,6 +41,9 @@ Features:&#xD;
   <WebUI>http://[IP]:[PORT:3000]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/tracearr-supervised/tracearr-supervised.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/img/tracearr-icon.png</Icon>
+  <Screenshot>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/img/Dashboard.png</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/img/Map.png</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/img/Stats.png</Screenshot>
   <Description>Tracearr - Streaming access manager for Plex/Jellyfin with account sharing detection. All-in-one image with built-in database.</Description>
   <ExtraParams>--restart=unless-stopped</ExtraParams>
   <PostArgs/>

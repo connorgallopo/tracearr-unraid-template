@@ -38,6 +38,9 @@ GeoIP database (GeoLite2-City) is bundled for geolocation features.</Overview>
   <WebUI>http://[IP]:[PORT:3000]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/tracearr/tracearr.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/img/tracearr-icon.png</Icon>
+  <Screenshot>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/img/Dashboard.png</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/img/Map.png</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/img/Stats.png</Screenshot>
   <Description>Tracearr - Streaming access manager for Plex/Jellyfin with account sharing detection. Requires external database.</Description>
   <ExtraParams>--restart=unless-stopped</ExtraParams>
   <PostArgs/>
