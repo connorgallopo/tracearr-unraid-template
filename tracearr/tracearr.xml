@@ -62,8 +62,6 @@ GeoIP database (GeoLite2-City) is bundled for geolocation features.</Overview>
 
   <Config Name="Cookie Secret" Target="COOKIE_SECRET" Default="" Mode="" Description="Cookie signing key (32 hex chars). Generate with: openssl rand -hex 32" Type="Variable" Display="always" Required="true" Mask="true"/>
 
-  <Config Name="Encryption Key" Target="ENCRYPTION_KEY" Default="" Mode="" Description="Server token encryption key (32 hex chars). Generate with: openssl rand -hex 32" Type="Variable" Display="always" Required="true" Mask="true"/>
-
   <!-- Optional Settings -->
   <Config Name="Log Level" Target="LOG_LEVEL" Default="info" Mode="" Description="Logging verbosity: debug, info, warn, error" Type="Variable" Display="advanced" Required="false" Mask="false">info</Config>
 

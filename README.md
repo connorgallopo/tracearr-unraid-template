@@ -67,7 +67,7 @@ GeoIP database (GeoLite2-City) is bundled for geolocation.
 | Redis Data | `/data/redis` | Cache storage |
 | App Data | `/data/tracearr` | Persisted secrets and app files |
 
-Secrets (JWT, Cookie, Encryption) are **auto-generated** on first run and persisted.
+Secrets (JWT, Cookie) are **auto-generated** on first run and persisted.
 
 ### Regular Template
 
@@ -77,7 +77,6 @@ Secrets (JWT, Cookie, Encryption) are **auto-generated** on first run and persis
 | `REDIS_URL` | Redis connection string (e.g., `redis://192.168.1.100:6379`) |
 | `JWT_SECRET` | JWT signing key (32 hex chars) |
 | `COOKIE_SECRET` | Cookie signing key (32 hex chars) |
-| `ENCRYPTION_KEY` | Server token encryption key (32 hex chars) |
 
 Generate secrets with: `openssl rand -hex 32`
 
