@@ -4,13 +4,16 @@ Unraid Community Applications templates for [Tracearr](https://github.com/connor
 
 ## About Tracearr
 
-Tracearr is a streaming access manager for Plex and Jellyfin servers that detects account sharing through:
+Tracearr monitors your Plex, Jellyfin, and Emby servers from a single dashboard. Track streams in real-time, analyze playback patterns, and detect account sharing.
 
-- Impossible travel detection
-- Simultaneous location monitoring
-- Device velocity tracking
-- Concurrent stream limits
-- Geographic restrictions
+Features include:
+
+- Multi-server support (Plex, Jellyfin, Emby)
+- Session tracking with full history
+- Stream analytics (transcoding, bandwidth, codecs)
+- Live TV and music tracking
+- Sharing detection (impossible travel, simultaneous locations, device velocity, concurrent streams, geo restrictions)
+- Trust scores and real-time alerts
 
 ## Available Templates
 

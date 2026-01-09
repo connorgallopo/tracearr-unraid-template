@@ -19,19 +19,20 @@
   <WebPage>https://discord.gg/a7n3sFd2Yw</WebPage>
   <ExtraSearchTerms>plex jellyfin emby account sharing detection streaming monitor session tracker trust score geolocation impossible travel arr</ExtraSearchTerms>
   <Date>2025-12-10</Date>
-  <Overview>Tracearr is a streaming access manager for Plex and Jellyfin servers that detects account sharing.&#xD;
+  <Overview>Tracearr monitors your Plex, Jellyfin, and Emby servers from a single dashboard.&#xD;
 &#xD;
 REQUIRES: External TimescaleDB (PostgreSQL 15+) and Redis.&#xD;
 For a simpler setup, use Tracearr Supervised instead (all-in-one image).&#xD;
 &#xD;
 Features:&#xD;
-- Multi-server support (Plex + Jellyfin)&#xD;
+- Multi-server support (Plex, Jellyfin, Emby)&#xD;
 - Session tracking with full history&#xD;
+- Stream analytics (transcoding, bandwidth, codecs)&#xD;
+- Live TV and music tracking&#xD;
 - Geolocation and interactive stream map&#xD;
-- 5 sharing detection rules (impossible travel, simultaneous locations, device velocity, concurrent streams, geo restriction)&#xD;
-- User management with trust scores&#xD;
+- Sharing detection rules (impossible travel, simultaneous locations, device velocity, concurrent streams, geo restriction)&#xD;
+- Trust scores and real-time alerts&#xD;
 - Discord + Webhook notifications&#xD;
-- Real-time dashboard&#xD;
 &#xD;
 GeoIP database (GeoLite2-City) is bundled for geolocation features.</Overview>
   <Category>MediaServer:Other Tools: Status:Stable</Category>
@@ -41,7 +42,7 @@ GeoIP database (GeoLite2-City) is bundled for geolocation features.</Overview>
   <Screenshot>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/img/Dashboard.png</Screenshot>
   <Screenshot>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/img/Map.png</Screenshot>
   <Screenshot>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/img/Stats.png</Screenshot>
-  <Description>Tracearr - Streaming access manager for Plex/Jellyfin with account sharing detection. Requires external database.</Description>
+  <Description>Tracearr - Media server monitoring for Plex, Jellyfin, and Emby. Requires external database.</Description>
   <ExtraParams>--restart=unless-stopped</ExtraParams>
   <PostArgs/>
   <Labels/>

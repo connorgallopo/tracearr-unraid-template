@@ -19,7 +19,7 @@
   <WebPage>https://discord.gg/a7n3sFd2Yw</WebPage>
   <ExtraSearchTerms>plex jellyfin emby account sharing detection streaming monitor session tracker trust score geolocation impossible travel arr</ExtraSearchTerms>
   <Date>2025-12-10</Date>
-  <Overview>Tracearr is a streaming access manager for Plex and Jellyfin servers that detects account sharing.&#xD;
+  <Overview>Tracearr monitors your Plex, Jellyfin, and Emby servers from a single dashboard.&#xD;
 &#xD;
 ALL-IN-ONE IMAGE INCLUDES:&#xD;
 - TimescaleDB (PostgreSQL 15 with time-series extensions)&#xD;
@@ -30,13 +30,14 @@ ALL-IN-ONE IMAGE INCLUDES:&#xD;
 No external database or Redis required!&#xD;
 &#xD;
 Features:&#xD;
-- Multi-server support (Plex + Jellyfin)&#xD;
+- Multi-server support (Plex, Jellyfin, Emby)&#xD;
 - Session tracking with full history&#xD;
+- Stream analytics (transcoding, bandwidth, codecs)&#xD;
+- Live TV and music tracking&#xD;
 - Geolocation and interactive stream map&#xD;
-- 5 sharing detection rules (impossible travel, simultaneous locations, device velocity, concurrent streams, geo restriction)&#xD;
-- User management with trust scores&#xD;
-- Discord + Webhook notifications&#xD;
-- Real-time dashboard</Overview>
+- Sharing detection rules (impossible travel, simultaneous locations, device velocity, concurrent streams, geo restriction)&#xD;
+- Trust scores and real-time alerts&#xD;
+- Discord + Webhook notifications</Overview>
   <Category>MediaServer:Other Tools: Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:3000]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/tracearr-supervised/tracearr-supervised.xml</TemplateURL>
@@ -44,7 +45,7 @@ Features:&#xD;
   <Screenshot>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/img/Dashboard.png</Screenshot>
   <Screenshot>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/img/Map.png</Screenshot>
   <Screenshot>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/img/Stats.png</Screenshot>
-  <Description>Tracearr - Streaming access manager for Plex/Jellyfin with account sharing detection. All-in-one image with built-in database.</Description>
+  <Description>Tracearr - Media server monitoring for Plex, Jellyfin, and Emby. All-in-one image with built-in database.</Description>
   <ExtraParams>--restart=unless-stopped</ExtraParams>
   <PostArgs/>
   <Labels/>
