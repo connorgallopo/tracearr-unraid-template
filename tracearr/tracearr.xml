@@ -13,10 +13,10 @@
   </Branch>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Support>https://github.com/connorgallopo/tracearr/issues</Support>
+  <Support>https://discord.gg/a7n3sFd2Yw</Support>
   <Project>https://github.com/connorgallopo/tracearr</Project>
   <ReadMe>https://github.com/connorgallopo/tracearr#readme</ReadMe>
-  <WebPage>https://discord.gg/a7n3sFd2Yw</WebPage>
+  <WebPage>https://tracearr.com</WebPage>
   <ExtraSearchTerms>plex jellyfin emby account sharing detection streaming monitor session tracker trust score geolocation impossible travel arr</ExtraSearchTerms>
   <Date>2025-12-10</Date>
   <Overview>Tracearr monitors your Plex, Jellyfin, and Emby servers from a single dashboard.&#xD;
@@ -40,8 +40,11 @@ GeoIP database (GeoLite2-City) is bundled for geolocation features.</Overview>
   <TemplateURL>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/tracearr/tracearr.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/img/tracearr-icon.png</Icon>
   <Screenshot>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/img/Dashboard.png</Screenshot>
-  <Screenshot>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/img/Map.png</Screenshot>
-  <Screenshot>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/img/Stats.png</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/img/HeatMap.png</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/img/Stats-Activity.png</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/img/Performance-Bandwidth.png</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/img/Performance-Devices.png</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/img/Rules.png</Screenshot>
   <Description>Tracearr - Media server monitoring for Plex, Jellyfin, and Emby. Requires external database.</Description>
   <ExtraParams>--restart=unless-stopped</ExtraParams>
   <PostArgs/>
@@ -70,14 +73,5 @@ GeoIP database (GeoLite2-City) is bundled for geolocation features.</Overview>
 
   <Config Name="CORS Origin" Target="CORS_ORIGIN" Default="*" Mode="" Description="Allowed origins for CORS. Use * for all origins, or specify a domain (e.g., https://example.com)." Type="Variable" Display="advanced" Required="false" Mask="false">*</Config>
 
-  <Changes>
-### 2025-12-10
-- First stable release (v1.2.0)
-- Dark/light mode theme support
-- Custom date filtering for stats
-- Mobile app with push notifications
-- Plex SSE for real-time session updates
-- Emby server support
-- Timezone support via TZ environment variable
-  </Changes>
+  <Changes>See full changelog: https://github.com/connorgallopo/tracearr/releases</Changes>
 </Container>
