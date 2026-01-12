@@ -75,5 +75,7 @@ Features:&#xD;
 
   <Config Name="CORS Origin" Target="CORS_ORIGIN" Default="*" Mode="" Description="Allowed origins for CORS. Use * for all origins, or specify a domain (e.g., https://example.com)." Type="Variable" Display="advanced" Required="false" Mask="false">*</Config>
 
+  <Config Name="PostgreSQL Max Memory" Target="PG_MAX_MEMORY" Default="2GB" Mode="" Description="Maximum memory for PostgreSQL tuning. Set this if PostgreSQL crashes or uses too much RAM. Examples: 2GB, 4GB, 8GB" Type="Variable" Display="advanced" Required="false" Mask="false">2GB</Config>
+
   <Changes>See full changelog: https://github.com/connorgallopo/tracearr/releases</Changes>
 </Container>
