@@ -49,7 +49,7 @@ Features:&#xD;
   <Screenshot>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/img/Performance-Devices.png</Screenshot>
   <Screenshot>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/img/Rules.png</Screenshot>
   <Description>Tracearr - Media server monitoring for Plex, Jellyfin, and Emby. All-in-one image with built-in database.</Description>
-  <ExtraParams>--restart=unless-stopped</ExtraParams>
+  <ExtraParams>--restart=unless-stopped --shm-size=512m</ExtraParams>
   <PostArgs/>
   <Labels/>
 
