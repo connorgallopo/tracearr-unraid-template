@@ -10,6 +10,12 @@
   <Branch>
     <Tag>supervised-nightly</Tag>
     <TagDescription>Nightly all-in-one build. May be unstable.</TagDescription>
+    <Beta>true</Beta>
+  </Branch>
+  <Branch>
+    <Tag>supervised-next</Tag>
+    <TagDescription>Latest beta all-in-one build. Preview upcoming features.</TagDescription>
+    <Beta>true</Beta>
   </Branch>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
@@ -18,7 +24,6 @@
   <ReadMe>https://github.com/connorgallopo/tracearr#readme</ReadMe>
   <WebPage>https://tracearr.com</WebPage>
   <ExtraSearchTerms>plex jellyfin emby account sharing detection streaming monitor session tracker trust score geolocation impossible travel arr</ExtraSearchTerms>
-  <Date>2025-12-10</Date>
   <Overview>Tracearr monitors your Plex, Jellyfin, and Emby servers from a single dashboard.&#xD;
 &#xD;
 ALL-IN-ONE IMAGE INCLUDES:&#xD;
@@ -48,7 +53,6 @@ Features:&#xD;
   <Screenshot>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/img/Performance-Bandwidth.png</Screenshot>
   <Screenshot>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/img/Performance-Devices.png</Screenshot>
   <Screenshot>https://raw.githubusercontent.com/connorgallopo/tracearr-unraid-template/main/img/Rules.png</Screenshot>
-  <Description>Tracearr - Media server monitoring for Plex, Jellyfin, and Emby. All-in-one image with built-in database.</Description>
   <ExtraParams>--restart=unless-stopped --shm-size=512m</ExtraParams>
   <PostArgs/>
   <Labels/>

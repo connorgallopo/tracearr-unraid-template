@@ -30,6 +30,7 @@ No external database or Redis required!
 | Tag | Description |
 |-----|-------------|
 | `supervised` | Stable all-in-one image |
+| `supervised-next` | Latest beta (preview upcoming features) |
 | `supervised-nightly` | Latest development build (may be unstable) |
 
 ### Tracearr (Advanced)
@@ -44,6 +45,7 @@ GeoIP database (GeoLite2-City) is bundled for geolocation.
 | Tag | Description |
 |-----|-------------|
 | `latest` | Stable release |
+| `next` | Latest beta (preview upcoming features) |
 | `nightly` | Latest development build (may be unstable) |
 
 ## Installation
