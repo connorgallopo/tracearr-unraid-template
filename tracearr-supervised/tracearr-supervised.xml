@@ -61,7 +61,7 @@ Features:&#xD;
   <Config Name="Web UI Port" Target="3000" Default="3000" Mode="tcp" Description="Port for the Tracearr web interface." Type="Port" Display="always" Required="true" Mask="false">3000</Config>
 
   <!-- Data Directories -->
-  <Config Name="PostgreSQL Data" Target="/data/postgres" Default="/mnt/user/appdata/tracearr/postgres" Mode="rw" Description="PostgreSQL database storage. DO NOT change after first run." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/tracearr/postgres</Config>
+  <Config Name="PostgreSQL Data" Target="/data/postgres" Default="/mnt/user/appdata/tracearr/postgres" Mode="rw" Description="PostgreSQL database storage. DO NOT change after first run. &lt;br&gt;&lt;b&gt;Performance tip:&lt;/b&gt; For best performance, use a path that bypasses the Unraid array (e.g. /mnt/cache/appdata or /mnt/appdata if configured). Paths under /mnt/user go through a FUSE layer that significantly slows database operations." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/tracearr/postgres</Config>
 
   <Config Name="Redis Data" Target="/data/redis" Default="/mnt/user/appdata/tracearr/redis" Mode="rw" Description="Redis data storage." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/tracearr/redis</Config>
 
