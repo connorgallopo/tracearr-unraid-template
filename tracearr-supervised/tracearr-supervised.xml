@@ -65,7 +65,9 @@ Features:&#xD;
 
   <Config Name="Redis Data" Target="/data/redis" Default="/mnt/user/appdata/tracearr/redis" Mode="rw" Description="Redis data storage." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/tracearr/redis</Config>
 
-  <Config Name="App Data" Target="/data/tracearr" Default="/mnt/user/appdata/tracearr/data" Mode="rw" Description="Auto-generated secrets and the poster cache (about 18 KB per poster). To keep the cache off your cache pool, point this at an array share. If you change it after first run, move the existing files with it or saved secrets stop working." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/tracearr/data</Config>
+  <Config Name="App Data" Target="/data/tracearr" Default="/mnt/user/appdata/tracearr/data" Mode="rw" Description="Auto-generated secrets and the poster cache (about 18 KB per poster). To store the cache elsewhere, set Image Cache under Show more settings. If you change it after first run, move the existing files with it or saved secrets stop working." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/tracearr/data</Config>
+
+  <Config Name="Image Cache" Target="/data/tracearr/image-cache" Default="" Mode="rw" Description="Optional. Leave empty to keep the poster cache in App Data. Set a host path, such as an array share, to store it there instead." Type="Path" Display="advanced" Required="false" Mask="false"/>
 
   <Config Name="Backups" Target="/data/backup" Default="/mnt/user/appdata/tracearr/backup" Mode="rw" Description="Database backups, scheduled and manual." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/tracearr/backup</Config>
 

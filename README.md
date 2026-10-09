@@ -71,6 +71,7 @@ GeoIP database (GeoLite2-City) is bundled for geolocation.
 | PostgreSQL Data | `/data/postgres` | Database storage - **DO NOT change after first run** |
 | Redis Data | `/data/redis` | Cache storage |
 | App Data | `/data/tracearr` | Persisted secrets and the poster cache (about 18 KB per poster) |
+| Image Cache (optional) | `/data/tracearr/image-cache` | Leave empty to keep the cache in App Data |
 | Backups | `/data/backup` | Database backups |
 
 Secrets (JWT, Cookie) are **auto-generated** on first run and persisted.
