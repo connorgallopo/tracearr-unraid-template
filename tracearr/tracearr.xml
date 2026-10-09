@@ -64,7 +64,7 @@ GeoIP database (GeoLite2-City) is bundled for geolocation features.</Overview>
   <Config Name="Redis URL" Target="REDIS_URL" Default="" Mode="" Description="Redis connection string. Example: redis://192.168.1.100:6379" Type="Variable" Display="always" Required="true" Mask="false"/>
 
   <!-- Data Directory -->
-  <Config Name="Data Directory" Target="/data" Default="/mnt/user/appdata/tracearr" Mode="rw" Description="Application data. Place GeoLite2-City.mmdb here for geolocation." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/tracearr</Config>
+  <Config Name="Data Directory" Target="/data" Default="/mnt/user/appdata/tracearr" Mode="rw" Description="Poster cache (about 18 KB per poster) and database backups. To keep the cache off your cache pool, point this at an array share." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/tracearr</Config>
 
   <!-- Required Secrets -->
   <Config Name="JWT Secret" Target="JWT_SECRET" Default="" Mode="" Description="JWT signing key (32 hex chars). Generate with: openssl rand -hex 32" Type="Variable" Display="always" Required="true" Mask="true"/>
