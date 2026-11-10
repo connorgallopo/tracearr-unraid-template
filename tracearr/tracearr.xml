@@ -3,10 +3,7 @@
   <Name>tracearr</Name>
   <Repository>ghcr.io/connorgallopo/tracearr:latest</Repository>
   <Registry>https://github.com/connorgallopo/tracearr/pkgs/container/tracearr</Registry>
-  <Branch>
-    <Tag>latest</Tag>
-    <TagDescription>Latest stable release.</TagDescription>
-  </Branch>
+  <DefaultTagDescription>Latest stable release.</DefaultTagDescription>
   <Branch>
     <Tag>nightly</Tag>
     <TagDescription>Nightly development build. May be unstable.</TagDescription>
@@ -21,6 +18,7 @@
   <Privileged>false</Privileged>
   <Support>https://discord.gg/a7n3sFd2Yw</Support>
   <Project>https://github.com/connorgallopo/tracearr</Project>
+  <License>AGPL-3.0</License>
   <ReadMe>https://github.com/connorgallopo/tracearr#readme</ReadMe>
   <WebPage>https://tracearr.com</WebPage>
   <ExtraSearchTerms>plex jellyfin emby account sharing detection streaming monitor session tracker trust score geolocation impossible travel arr</ExtraSearchTerms>

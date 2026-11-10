@@ -94,4 +94,4 @@ Generate secrets with: `openssl rand -hex 32`
 
 ## License
 
-This template repository is MIT licensed. Tracearr itself is AGPL-3.0 licensed.
+This template repository and Tracearr itself are AGPL-3.0 licensed. See [LICENSE](LICENSE).

@@ -3,10 +3,7 @@
   <Name>tracearr-supervised</Name>
   <Repository>ghcr.io/connorgallopo/tracearr:supervised</Repository>
   <Registry>https://github.com/connorgallopo/tracearr/pkgs/container/tracearr</Registry>
-  <Branch>
-    <Tag>supervised</Tag>
-    <TagDescription>All-in-one image with built-in TimescaleDB and Redis.</TagDescription>
-  </Branch>
+  <DefaultTagDescription>All-in-one image with built-in TimescaleDB and Redis.</DefaultTagDescription>
   <Branch>
     <Tag>supervised-nightly</Tag>
     <TagDescription>Nightly all-in-one build. May be unstable.</TagDescription>
@@ -21,6 +18,7 @@
   <Privileged>false</Privileged>
   <Support>https://discord.gg/a7n3sFd2Yw</Support>
   <Project>https://github.com/connorgallopo/tracearr</Project>
+  <License>AGPL-3.0</License>
   <ReadMe>https://github.com/connorgallopo/tracearr#readme</ReadMe>
   <WebPage>https://tracearr.com</WebPage>
   <ExtraSearchTerms>plex jellyfin emby account sharing detection streaming monitor session tracker trust score geolocation impossible travel arr</ExtraSearchTerms>
